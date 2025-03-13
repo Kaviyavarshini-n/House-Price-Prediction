@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Housing Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Paris Housing Price Prediction</h2>
+
+    <form action="/predict" method="post">
+        <label>Enter Features:</label>
+        <input type="text" name="squareMeters" placeholder="Square Meters" required>
+        <input type="text" name="numberOfRooms" placeholder="Number of Rooms" required>
+        <input type="text" name="hasYard" placeholder="Has Yard (1-Yes or 0-No)" required>
+        <input type="text" name="hasPool" placeholder="Has Pool (1-Yes or 0-No)" required>
+        <input type="text" name="floors" placeholder="Floors" required>
+        <input type="text" name="numPrevOwners" placeholder="Number of Previous Owners" required>
+        <input type="text" name="isNewBuilt" placeholder="Is New Built (1-Yes or 0-No)" required>
+        <input type="text" name="garage" placeholder="Garage (1-Yes or 0-No)" required>
+        <input type="text" name="hasStorageRoom" placeholder="Has Storage Room (1-Yes or 0-No)" required>
+        <input type="text" name="hasGuestRoom" placeholder="Has Guest Room (1-Yes or 0-No)" required>
+        <button type="submit">Predict Price</button>
+    </form>
+
+    {% if prediction_text %}
+        <p class="result">{{ prediction_text }}</p>
+    {% endif %}
+
+</body>
+</html>
