@@ -5,6 +5,7 @@ This is a Flask-based web application for predicting housing prices in Paris usi
 **Prerequisites**
 
 Ensure you have the following installed:
+
 1.Python 3.x
 
 2.Flask
