@@ -53,4 +53,4 @@ Click the Predict Price button.
 
 The predicted house price will be displayed on the page.
 
-Dataset Link: https://www.kaggle.com/datasets/mssmartypants/paris-housing-price-prediction/data
+Dataset Link: https://www.kaggle.com/datasets/mssmartypants/paris-housing-price-prediction
