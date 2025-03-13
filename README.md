@@ -27,7 +27,8 @@ Also refer the requirements file.
 1.Clone this repository or download the project files.
 
 git clone https://github.com/Kaviyavarshini-n/House-Price-Prediction.git
-cd paris-housing-prediction
+
+cd House-Price-Prediction
 
 2.Install required dependencies:
 
